@@ -1,4 +1,6 @@
 backend/node_modules
+backend/.env
+
 android/.idea
 android/.settings
 android/.project
