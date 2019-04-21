@@ -1,3 +1,4 @@
+# auto generated
 *.iml
 .gradle
 /local.properties
@@ -11,3 +12,8 @@
 /build
 /captures
 .externalNativeBuild
+
+# added by developer
+.idea
+.settings
+.project

@@ -1,5 +1,6 @@
 var express = require('express')
- 
+var dotenv = require('dotenv').config();
+
 var app = express()
  
 app.get('/', function(req, res) {
@@ -10,4 +11,4 @@ app.get('/', function(req, res) {
     ]})
 })
  
-app.listen(8888)
+app.listen(process.env.PORT)

@@ -23,8 +23,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private ArrayList<Pinpoint> mMarkers = new ArrayList<Pinpoint>();
-    //TODO: replace ip with your ip to test on local. This will laster be replaced by heroku url once the backend in online
-    private final String backend_url = "http://IP:8888";
+
+    private final String backend_url = "https://lehigh-map.herokuapp.com";
+    // private final String backend_url = "https://ip:8888";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

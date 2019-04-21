@@ -1,6 +1,13 @@
-# Node.js backend for LUMap
+# Node.js backend
 
-## supervisor
+## Deployment
+```
+git push heroku master
+```
+
+## Usage of Tools
+
+### [***supervisor***](https://www.npmjs.com/package/supervisor) - restarts programs when a *.js file changes. 
 ```
 supervisor index
 ```
