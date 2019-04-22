@@ -36,3 +36,10 @@ Example:
 ```
 	python train.py --network=mobilenet --GPU=0 --optimizer=sgd --lr=0.01 --decay=0.0001 --dataset_root='data' --description='' --model_path=None
 ```
+
+## Deploy the model
+create a new environment and install keras==2.2.4 and tensorflow==1.13. Then install tf_nightly to use TFLiteConverter.
+```
+pip install keras==2.2.4 tensorflow==1.13
+pip install tf_nightly
+```
