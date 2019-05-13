@@ -110,6 +110,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         populateMarkers(mMap);
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(40.606691, -75.377016),16));
+
+        mMap.setMyLocationEnabled(true);
     }
 
     private void populateMarkers(final GoogleMap mMap){
