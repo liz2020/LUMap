@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    // required for using tensorflow lite
+    aaptOptions{
+        noCompress "tflite"
+    }
 }
 
 dependencies {
@@ -27,4 +31,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // dependencies for volleysingleton
     implementation 'com.android.volley:volley:1.1.0'
+    // dependencies for tflite
+    implementation 'org.tensorflow:tensorflow-lite:+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }

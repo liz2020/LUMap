@@ -1,7 +1,7 @@
 # machine learning
 
 ## Set up environment
-irst install Anaconda form its website, then run the following commands (remember to replace the environment name on the first and second commands):
+first install Anaconda form its website, then run the following commands (remember to replace the environment name on the first and second commands):
 ```
 	conda create -n NewEnvironmentName python=3.6
 	source activate NewEnvironmentName

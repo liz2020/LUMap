@@ -3,6 +3,8 @@ package liz220.cse216.lehigh.edu.lehighmap;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.Comparator;
+
 class Pinpoint {
     // Latitude, in degrees.
     double lat;
@@ -31,4 +33,13 @@ class Pinpoint {
         marker = new MarkerOptions().position(this.latlng).title(title);
     }
 
+}
+
+
+class Sortbyroll implements Comparator<Pinpoint>
+{
+    public int compare(Pinpoint a, Pinpoint b)
+    {
+        return a.title.compareTo(b.title);
+    }
 }
